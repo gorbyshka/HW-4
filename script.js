@@ -1,15 +1,15 @@
-const questCheck = prompt('Що ви хочете зробити?','add,sub,div,mult?');
+const questCheck = prompt('Що ви хочете зробити?','add,sub,div,mult?',);
 
 const firstNumber = prompt('Введіть перше число');
 const secondNumber = prompt('Введіть друге число');
 
-const firstConvertion = Number(firstNumber);
-const secondConvertion = Number(secondNumber);
+const firstConversion = Number(firstNumber);
+const secondConversion = Number(secondNumber);
 
-const addResult = firstConvertion + secondConvertion;
-const subResult = firstConvertion - secondConvertion;
-const divResult = firstConvertion / secondConvertion;
-const multResult = firstConvertion * secondConvertion;
+const addResult = firstConversion + secondConversion;
+const subResult = firstConversion - secondConversion;
+const divResult = firstConversion / secondConversion;
+const multResult = firstConversion * secondConversion;
 
 alert('Користувач ввів ' + ': ' + firstNumber + '+' + secondNumber + '=' + addResult);
 alert('Користувач ввів ' + ': ' + firstNumber + '-' + secondNumber + '=' + subResult);
