@@ -1,17 +1,24 @@
-const questCheck = prompt('Що ви хочете зробити?','add,sub,div,mult?',);
+const firstNumber = Number(prompt('Введіть перше число'));
+const secondNumber = Number(prompt('Введіть друге число'));
 
-const firstNumber = prompt('Введіть перше число');
-const secondNumber = prompt('Введіть друге число');
+const questAdd = confirm('+');
+const questSub = confirm('-');
+const questMult = confirm('*');
+const questDiv = confirm('/');
 
-const firstConversion = Number(firstNumber);
-const secondConversion = Number(secondNumber);
+const addResult = firstNumber + secondNumber;
+const subResult = firstNumber - secondNumber;
+const multResult = firstNumber * secondNumber;
+const divResult = firstNumber / secondNumber;
 
-const addResult = firstConversion + secondConversion;
-const subResult = firstConversion - secondConversion;
-const divResult = firstConversion / secondConversion;
-const multResult = firstConversion * secondConversion;
-
-alert('Користувач ввів ' + ': ' + firstNumber + '+' + secondNumber + '=' + addResult);
-alert('Користувач ввів ' + ': ' + firstNumber + '-' + secondNumber + '=' + subResult);
-alert('Користувач ввів ' + ': ' + firstNumber + '/' + secondNumber + '=' + divResult);
-alert('Користувач ввів ' + ': ' + firstNumber + '*' + secondNumber + '=' + multResult);
+if (questAdd == ! false) {
+    alert('Користувач ввів ' + ': ' + firstNumber + '+' + secondNumber + '=' + addResult);
+} else if (questSub == ! false) {
+    alert('Користувач ввів ' + ': ' + firstNumber + '-' + secondNumber + '=' + subResult);
+} else if (questMult == ! false) {
+    alert('Користувач ввів ' + ': ' + firstNumber + '*' + secondNumber + '=' + multResult);
+} else if (questDiv == ! false) {
+    alert('Користувач ввів ' + ': ' + firstNumber + '/' + secondNumber + '=' + divResult);
+} else {
+    alert('Тоді рахуйте самі:)');
+}
