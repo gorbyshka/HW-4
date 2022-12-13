@@ -17,7 +17,7 @@ switch (operation) {
         result = firstNumber / secondNumber;
         break;
     default:
-        alert('Ви не ввели операцію');
+        result = 'Ви не ввели операцію';
 };
 
 alert('Користувач ввів ' + ': ' + firstNumber + operation + secondNumber + '=' + result);
