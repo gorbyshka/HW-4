@@ -1,24 +1,23 @@
-const firstNumber = Number(prompt('Введіть перше число?'));
-const secondNumber = Number(prompt('Введіть друге число?'));
+const firstNumber = Number(prompt('Введіть перше число'));
+const secondNumber = Number(prompt('Введіть друге число'));
 const operation = prompt('Введіть операцію');
-
-const addResult = firstNumber + secondNumber;
-const subResult = firstNumber - secondNumber;
-const multResult = firstNumber * secondNumber;
-const divResult = firstNumber / secondNumber;
+let result;
 
 switch (operation) {
     case '+':
-        alert('Користувач ввів ' + ': ' + firstNumber + '+' + secondNumber + '=' + addResult);
+        result = firstNumber + secondNumber;
         break;
     case '-':
-        alert('Користувач ввів ' + ': ' + firstNumber + '-' + secondNumber + '=' + subResult);
+        result = firstNumber - secondNumber;
         break;
     case '*':
-        alert('Користувач ввів ' + ': ' + firstNumber + '*' + secondNumber + '=' + multResult);
+        result = firstNumber * secondNumber;
         break;
     case '/':
-        alert('Користувач ввів ' + ': ' + firstNumber + '/' + secondNumber + '=' + divResult);
-        default:
-            alert('Ви не ввели операцію');
+        result = firstNumber / secondNumber;
+        break;
+    default:
+        alert('Ви не ввели операцію');
 };
+
+alert('Користувач ввів ' + ': ' + firstNumber + operation + secondNumber + '=' + result);
